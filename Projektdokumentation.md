@@ -1,9 +1,9 @@
 # LA_1200
 # Projekt-Dokumentation
 
-☝️ Alle Text-Stellen, welche mit einem ✍️ beginnen, können Sie löschen, sobald Sie die entsprechende Stellen ausgefüllt haben.
 
-✍️ Ihr Gruppenname und Ihre Nachnamen
+Gruppe: Butterfly
+Mitglieder: Joel Haldimann, Mohamad Amraya, Tim Kral, Janick Hurschler
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |

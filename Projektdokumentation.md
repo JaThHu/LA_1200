@@ -15,7 +15,7 @@ Mitglieder: Joel Haldimann, Mohamad Amraya, Tim Kral, Janick Hurschler
 
 ### 1.1 Ihr Projekt
 
-✍️ Beschreiben Sie Ihr Projekt in einem griffigen Satz.
+Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops eingelesen und zugeteilt werden.
 
 ### 1.2 User Stories
 

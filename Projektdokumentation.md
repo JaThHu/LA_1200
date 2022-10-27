@@ -45,9 +45,9 @@ Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops ein
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |       |           |              |               |
-| ...  |       |           |              |               |
-
+| 1.A  |  03.11.2022     |   Janick        |       Funktion zum Einlesen der Textdatei       |      45 min         |
+|  1.B  |  03.11.2022     |    Tim       |       Die Daten der Textdatei sollen den verschiedene Variabeln zugeteilt werden       |       2 mal 45 min        |
+|  1.C  |  03.11.2022     |           |            |               |
 Total: 28 Arbeitspakete
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.

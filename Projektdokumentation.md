@@ -26,7 +26,6 @@ Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops ein
 | 3   |    muss             |  funktionale Anforderung    | Als Computer möchte ich dem User ausgeben, welche Person, welchen Workshop bekommt. |
 | 4   |    kann             |  Qualitätsanforderung    | Als Computer möchte ich zählen, wie viele Personen sich eingetragen haben, um den User zu informieren fals es schon zu viele Teilnehmende hat. |
 
-✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
 
 ### 1.3 Testfälle
 
@@ -36,7 +35,6 @@ Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops ein
 | 1.2  | Es sind 20 User in einem Workshop eingetragen| Ich trage einen Weiteren Namen mit der 1. Priorität in diesem Workshop ein        | Der Name wird mit der zweiten Priorität abgespeichert.                   |
 | 1.3  | Es sind weniger als 3 Users im Workshop eingetragen. | Ich trage meinen Namen in diesen Workshop ein. | Ich werde zu meiner 2. Priorität zugeteilt. |
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 
 ### 1.4 Diagramme
 
@@ -52,7 +50,6 @@ Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops ein
 |  1.C  |  03.11.2022     |           |            |               |
 Total: 28 Arbeitspakete
 
-✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, auf die sich das Arbeitspaket bezieht, und `m` von `A` an nach oben buchstabiert. Beispiel: Das dritte Arbeitspaket, das die zweite User Story betrifft, hat also die Nummer `2.C`.
 
 ✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
 

@@ -3,7 +3,7 @@
 
 
 ### Gruppe: Butterfly
-Mitglieder: Joel Haldimann, Mohamad Amraya, Tim Kral, Janick Hurschler
+Mitglieder: Joël Haldimann, Mohamad Amraya, Tim Kral, Janick Hurschler
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |

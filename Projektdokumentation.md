@@ -32,8 +32,9 @@ Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops ein
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
-| ...  |              |         |                   |
+| 1.1  | Das Programm wurde Gestartet. | Ich gebe meinen Namen, und meine Prioritäten hinein        | Im Txt File werden mein Name und die Prioritäten angezeigt.                  |
+| 1.2  | Es sind 20 User in einem Workshop eingetragen| Ich trage einen Weiteren Namen mit der 1. Priorität in diesem Workshop ein        | Der Name wird mit der zweiten Priorität abgespeichert.                   |
+| 1.3  | Es sind weniger als 3 Users im Workshop eingetragen. | Ich trage meinen Namen in diesen Workshop ein. | Ich werde zu meiner 2. Priorität zugeteilt. |
 
 ✍️ Die Nummer hat das Format `N.m`, wobei `N` die Nummer der User Story ist, die der Testfall abdeckt, und `m` von `1` an nach oben gezählt. Beispiel: Der dritte Testfall, der die zweite User Story abdeckt, hat also die Nummer `2.3`.
 

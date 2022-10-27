@@ -40,7 +40,8 @@ Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops ein
 
 ### 1.4 Diagramme
 
-✍️ Hier können Sie PAPs, Use Case- und Gantt-Diagramme oder Ähnliches einfügen.
+![Screenshot 2022-10-27 103413](https://user-images.githubusercontent.com/111045792/198235501-023c56f7-9432-41ac-8d94-fcc40997807f.png)
+
 
 ## 2 Planen
 

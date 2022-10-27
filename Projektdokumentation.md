@@ -3,7 +3,7 @@
 
 
 ### Gruppe: Butterfly
-Mitglieder: Joël Haldimann, Mohamad Amraya, Tim Kral, Janick Hurschler
+Mitglieder: Joel Haldimann, Mohamad Amraya, Tim Kral, Janick Hurschler
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
@@ -21,8 +21,10 @@ Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops ein
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-| ...  |                 |      |                                    |
+| 1    |    muss             |  funktionale Anforderung    | Als Benutzer will ich dem Programm eine Datei geben, um die Zuteilung zu ermöglichen. |
+| 2  |       muss          |  Qualitätsanforderung   |        Als Computer möchte ich erkennen, ob die Datei vollständig ist, um dem User einen möglichen Fehler mitzuteilen.                            |
+| 3   |    muss             |  funktionale Anforderung    | Als Computer möchte ich dem User ausgeben, welche Person, welchen Workshop bekommt. |
+| 4   |    kann             |  Qualitätsanforderung    | Als Computer möchte ich zählen, wie viele Personen sich eingetragen haben, um dem User diese Zahl mitzuteilen. |
 
 ✍️ Jede User Story hat eine ganzzahlige Nummer (1, 2, 3 etc.), eine Verbindlichkeit (Muss oder Kann?), und einen Typ (Funktional, Qualität, Rand). Die User Story selber hat folgende Form: *Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️*.
 

@@ -7,7 +7,7 @@ Mitglieder: Joël Haldimann, Mohamad Amraya, Tim Kral, Janick Hurschler
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
+|  03.11.2022     | 0.1.0   |  Der Code ist jetzt soweit, dass er eine Datei mit Daten einlesen kann. |
 |       | ...     |                                                              |
 |       | 1.0.0   |                                                              |
 
@@ -22,7 +22,7 @@ Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops ein
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
 | 1    |    muss             |  funktionale Anforderung    | Als Benutzer will ich dem Programm eine Datei geben können, um die Zuteilung zu ermöglichen. |
-| 2  |       kann          |  Qualitätsanforderung   |        Als Computer möchte ich erkennen, ob die Datei vollständig ist, um dem User einen möglichen Fehler mitzuteilen.                            |
+| 2  |       muss          |  Qualitätsanforderung   |        Als Computer möchte ich erkennen, ob die Datei vollständig ist, um dem User einen möglichen Fehler mitzuteilen.                            |
 | 3   |    muss             |  funktionale Anforderung    | Als Computer möchte ich dem User ausgeben, welche Person, welchen Workshop bekommt. |
 | 4   |    kann             |  Qualitätsanforderung    | Als Computer möchte ich zählen, wie viele Personen sich eingetragen haben, um den User zu informieren fals es schon zu viele Teilnehmende hat. |
 
@@ -45,9 +45,11 @@ Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops ein
 
 | AP-№ | Frist | Zuständig | Beschreibung | geplante Zeit |
 | ---- | ----- | --------- | ------------ | ------------- |
-| 1.A  |  03.11.2022     |   Janick        |       Funktion zum Einlesen der Textdatei       |      45 min         |
+| 1.A  |  03.11.2022     |   Janick, Joel       |       Funktion zum Einlesen der Textdatei       |      45 min         |
 |  1.B  |  03.11.2022     |    Tim       |       Die Daten der Textdatei sollen den verschiedene Variabeln zugeteilt werden       |       2 mal 45 min        |
-|  1.C  |  03.11.2022     |           |            |               |
+|  2.A  |  10.11.2022     |     Janick, Joel      |   try-catch um mögliche Fehler zu vermeiden.         |      45 min         |
+|  3.A  |  10.11.2022     |     Tim      |   Ausgabe in einer Externen Textdatei.        |      45 min         |
+|  3.B  |  10.11.2022     |     Janick, Joel      |   Design der Externen Textdatei.         |      45 min         |
 Total: 28 Arbeitspakete
 
 

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
-
-
+using System.Security.Cryptography.X509Certificates;
+using System.Reflection.Metadata;
 
 namespace LA_1200_Workshop
 {
@@ -15,21 +15,12 @@ namespace LA_1200_Workshop
 
             string[] lines = text.Split("\r\n");
             int words = lines.Length;
-            string[] email = new string[words];
-            string[] prio1 = new string[words];
-            string[] prio2 = new string[words];
-            string[] prio3 = new string[words];
+            string[] email = new string[1000];
+            string[] prio1 = new string[1000];
+            string[] prio2 = new string[1000];
+            string[] prio3 = new string[1000];
 
-            for (int Linie = 0; Linie < lines.Length; Linie++)
-            {
-                string[] items = lines[Linie].Split(';');
-                email[Linie] = items[0];
-                prio1[Linie] = items[1];
-                prio2[Linie] = items[2];
-                prio3[Linie] = items[3];
-
-            }
-            Console.WriteLine(email[1]);
+            
 
 
 
@@ -38,51 +29,123 @@ namespace LA_1200_Workshop
 
 
 
-            List<int> schwimmen = new List<int>();
-            List<int> tanzen = new List<int>();
-            List<int> programmieren = new List<int>();
+            List<string> schwimmen = new List<string>();
+            List<string> tanzen = new List<string>();
+            List<string> programmieren = new List<string>();
 
 
 
 
-            string x = "null";
 
 
-            for (int i = 0; i < 20; i++)
+
+            for (int i = 0; ; i++)
             {
-                do
+                if (prio1[i] == "Schwimmen")
                 {
-                    if (x == "schwimmen")
+                    if (schwimmen.Count > 19)
                     {
-                        schwimmen.Add(i);
+                        schwimmen.Add(email[i]);
+                    }
+                    else
+                    {
+                        if (prio2[i] == "Tanzen")
+                        {
+                            if (tanzen.Count > 19)
+                            {
+                                tanzen.Add(email[i]);
+                            }
+                            else
+                            {
+                                if (prio3[i] == "Programmieren")
+                                {
+                                    programmieren.Add(email[i]);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                for (int p = 0; ; p++)
+                {
+                    if (prio1[p] == "Programmieren")
+                    {
+                        if (programmieren.Count > 19)
+                        {
+                            programmieren.Add(email[p]);
+                        }
+                        else
+                        {
+                            if (prio2[p] == "Schwimmen")
+                            {
+                                if (schwimmen.Count > 19)
+                                {
+                                    schwimmen.Add(email[p]);
+                                }
+                                else
+                                {
+                                    if (prio3[p] == "Tanzen")
+                                    {
+                                        tanzen.Add(email[p]);
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    for (int q = 0; ; q++)
+                    {
+                        if (prio1[q] == "Tanzen")
+                        {
+                            if (tanzen.Count > 19)
+                            {
+                                tanzen.Add(email[q]);
+                            }
+                            else
+                            {
+                                if (prio2[q] == "Programmieren")
+                                {
+                                    if (programmieren.Count > 19)
+                                    {
+                                        programmieren.Add(email[q]);
+                                    }
+                                    else
+                                    {
+                                        if (prio3[q] == "Schwimmen")
+                                        {
+                                            schwimmen.Add(email[q]);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        string pathEinteilung = @"C:\Users\janic\OneDrive\Desktop\test.txt";
+                        
+                        int v = 0;
+                        foreach(string items in schwimmen)
+                        {
+                            File.WriteAllText(pathEinteilung, schwimmen[v]);
+                            v++;
+                        }
+
+                        int l = 0;
+                        foreach (string items in programmieren)
+                        {
+                            File.WriteAllText(pathEinteilung, programmieren[l]);
+                            l++;
+                        }
+
+                        int a = 0;
+                        foreach (string items in tanzen)
+                        {
+                            File.WriteAllText(pathEinteilung, tanzen[a]);
+                            a++;
+                        }
+
+                        
+
                     }
                     
-                } while (schwimmen.Count == 19);
-
-
-
-                for (int n = 0; n < 20; n++)
-                {
-                    do
-                    {
-                        if (x == "tanzen")
-                        {
-                            tanzen.Add(n);
-                        } 
-                    } while (tanzen.Count == 19);
-
-
-
-                    for (int m = 0; m < 20; m++)
-                    {
-                        do
-                        {
-                            if (x == "programmieren")
-                            {
-                                programmieren.Add(m);
-                            }
-                        } while (programmieren.Count == 19);
-                    }
                 }
             }
         }

@@ -15,25 +15,28 @@ Mitglieder: Joël Haldimann, Mohamad Amraya, Tim Kral, Janick Hurschler
 
 ### 1.1 Ihr Projekt
 
-Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops eingelesen und zugeteilt werden.
+Ein Programm in Visual Studios, bei dem Anmeldungen für verschiedene Workshops eingelesen und zugeteilt werden.
 
 ### 1.2 User Stories
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
 | 1    |    muss             |  funktionale Anforderung    | Als Benutzer will ich dem Programm eine Datei geben können, um die Zuteilung zu ermöglichen. |
-| 2  |       muss          |  Qualitätsanforderung   |        Als Computer möchte ich erkennen, ob die Datei vollständig ist, um dem User einen möglichen Fehler mitzuteilen.                            |
-| 3   |    muss             |  funktionale Anforderung    | Als Computer möchte ich dem User ausgeben, welche Person, welchen Workshop bekommt. |
-| 4   |    kann             |  Qualitätsanforderung    | Als Computer möchte ich zählen, wie viele Personen sich eingetragen haben, um den User zu informieren fals es schon zu viele Teilnehmende hat. |
+| 2  |       muss          |  funktionale Anforderung   |        Als Computer möchte ich alle Teilnehmer und deren Prioritäten einteilen.   |
+| 3 | muss | funktionale Anforderung | Als Computer möchte ich verhindern, dass zu wenig oder zu viele Teilnehmer in einen Workshop kommen. |
+| 4   |    muss             |  funktionale Anforderung    | Als Computer möchte ich dem User ausgeben, welche Person, welchen Workshop bekommt. |
+| 5   |    kann             |  Qualitätsanforderung    | Als Computer möchte ich zählen, wie viele Personen sich eingetragen haben, um dem User die Teilnehmeranzahl mitzuteilen. |
 
 
 ### 1.3 Testfälle
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  | Das Programm wurde Gestartet. | Ich gebe meinen Namen, und meine Prioritäten hinein        | Im Txt File werden mein Name und die Prioritäten angezeigt.                  |
-| 1.2  | Es sind 20 User in einem Workshop eingetragen| Ich trage einen Weiteren Namen mit der 1. Priorität in diesem Workshop ein        | Der Name wird mit der zweiten Priorität abgespeichert.                   |
-| 1.3  | Es sind weniger als 3 Users im Workshop eingetragen. | Ich trage meinen Namen in diesen Workshop ein. | Ich werde zu meiner 2. Priorität zugeteilt. |
+| 1.1  | Das Programm wurde gestartet. | Textdatei einfügen        |  Einteilung mit Teilnehmer und zugeteiltem Workshop.                  |
+| 2.1 | Textdatei wurde eingelesen. | Breakpoint bei der Zuweisung setzen. | Teilnehmer werden in jeden Workshop eingeteilt. |
+| 3.1 | Textdatei wurde eingelesen. | Breakpoint bei der while-Schleife setzen. | maximal 20 und minimum 4 Perosnen in einem Workshop. |
+| 4.1 | Textdatei wurde eingelesen. |         Einteilungs-Textdatei öffnen.          | Einteilung mit Name und Workshop. |
+| 5.1 | Textdatei wurde eingelesen. | Einteilungs-Textdatei öffnen. | Anzahl Teilnehmer: (z.B. 20) |
 
 
 ### 1.4 Diagramme
@@ -47,24 +50,25 @@ Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops ein
 | ---- | ----- | --------- | ------------ | ------------- |
 | 1.A  |  03.11.2022     |   Janick, Joel       |       Funktion zum Einlesen der Textdatei       |      45 min         |
 |  1.B  |  03.11.2022     |    Tim       |       Die Daten der Textdatei sollen den verschiedene Variabeln zugeteilt werden       |       2 mal 45 min        |
-|  2.A  |  10.11.2022     |     Janick, Joel      |   try-catch um mögliche Fehler zu vermeiden.         |      45 min         |
-|  3.A  |  10.11.2022     |     Tim      |   Ausgabe in einer Externen Textdatei.        |      45 min         |
-|  3.B  |  10.11.2022     |     Janick, Joel      |   Design der Externen Textdatei.         |      45 min         |
-|  4.A  |   10.11.2022    |   Mohamad |     Zuteilung den Personen auf die Workshops |  45 min |     
+|  2.A  |  10.11.2022     |      Joel      |   die einzelnen Zeilen der Textdatei sollen in ein Array gespeichert werden.         |      60 min         |
+|  3.A  |  10.11.2022     |     Mohamad    |     zuteilunng der Workshops und begrenzung der freien Plätze     |      60 min         |
+|  3.B  |  10.11.2022     |     Janick      |   Ausgabe der Einteilung mit Teilnehmern.        |      60 min         |
+|    |  10.11.2022     |     Janick, Joel, Mohamad      |   Zusammenfügen vom Code        |      60 min         |
 Total: 28 Arbeitspakete
 
 
-✍️ Ein Arbeitspaket sollte etwa 45' für eine Person in Anspruch nehmen. Die totale Anzahl Arbeitspakete sollte etwa Folgendem entsprechen: `Anzahl R-Sitzungen` ╳ `Anzahl Gruppenmitglieder` ╳ `4`. Wenn Sie also zu dritt an einem Projekt arbeiten, für welches zwei R-Sitzungen geplant sind, sollten Sie auf `2` ╳ `3` ╳`4` = `24` Arbeitspakete kommen. Sollten Sie merken, dass Sie hier nicht genügend Arbeitspakte haben, denken Sie sich weitere "Kann"-User Stories für Kapitel 1.2 aus.
-
 ## 3 Entscheiden
 
-✍️ Dokumentieren Sie hier Ihre Entscheidungen und Annahmen, die Sie im Bezug auf Ihre User Stories und die Implementierung getroffen haben.
+-Code in Visual Studios.
+-Mit Arrays arbeiten.
+-die Einteilung in einer Textdatei rückgeben.
+-jeder macht sein Code und der wird am Schluss zusammengesetzt.
 
 ## 4 Realisieren
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |       |           |               |                   |
+| 1.A  |  3.11.2022     |    Janick, Joel       |     45 min          |        90 min.           |
 | ...  |       |           |               |                   |
 
 ✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.

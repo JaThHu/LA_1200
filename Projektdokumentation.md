@@ -71,8 +71,8 @@ Total: 28 Arbeitspakete
 | 1.A  |  3.11.2022     |    Janick, Joel       |     45 min          |        90 min.           |
 | 1.B  |   3.11.2022    |    Tim       |       2 mal 45 min        |        90min           |
 | 2.A | 10.11.2022 | Joel | 60 min | 90 min |
-|3.A|Mohamad|10.11.2022|60 min|100 min|
-|3.B|Janick|10.11.2022| 60 min| 90 min|
+|3.A|10.11.2022|Mohamad|60 min|100 min|
+|3.B|10.11.2022|Janick| 60 min| 90 min|
 
 
 ## 5 Kontrollieren

@@ -50,6 +50,7 @@ Ein Programm in der Konsole, bei dem Anmeldungen für verschiedene Workshops ein
 |  2.A  |  10.11.2022     |     Janick, Joel      |   try-catch um mögliche Fehler zu vermeiden.         |      45 min         |
 |  3.A  |  10.11.2022     |     Tim      |   Ausgabe in einer Externen Textdatei.        |      45 min         |
 |  3.B  |  10.11.2022     |     Janick, Joel      |   Design der Externen Textdatei.         |      45 min         |
+|  4.A  |   10.11.2022    |   Mohamad |     Zuteilung den Personen auf die Workshops |  45 min |     
 Total: 28 Arbeitspakete
 
 

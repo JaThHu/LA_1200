@@ -13,13 +13,13 @@ Wir haben gelernt, wie man Daten aus einer Textdatei ausliest und in eine Textda
 
 ## Beschreibung
 
-Als wir beim Planen des Projektes waren, mussten wir herausfinden, wie man die benötigten Daten (hier Email-Adressen) aus einer Textdatei ausliest. Wir wollten nicht, dass
-der Nutzer alles von Hand eingeben muss, sonders dass er einfach eine Textdatei angeben kann, indem schon alles geschrieben ist.
-Wir sind zuerst in Internet gegangen und haben nach einer Lösung gesucht. Wir haben viele verschiedene möglichkeiten gesehen aber diese waren meist zu kompliziert und nicht geeignet.
-Als im nächsten Input genau diese funktion besprochen wurde, haben wir genau diese Art gewählt. Sie war passend, übersichtlich und verständlich.
-Zusammengefasst beesteht die Funktion ganz einfach aus "file.ReadAllText()" und "file.WriteAllText()". Bei beiden muss man in die Klammer einen Path, also ein Dateipfad, und
+Als wir beim Planen des Projektes waren, mussten wir herausfinden, wie man die benötigten Daten (hier E-Mail-Adressen) aus einer Textdatei ausliest. Wir wollten nicht, dass
+der Nutzer alles von Hand eingeben muss, sondern dass er einfach eine Textdatei angeben kann, indem schon alles geschrieben ist.
+Wir sind zuerst in Internet gegangen und haben nach einer Lösung gesucht. Wir haben viele verschiedene Möglichkeiten gesehen, aber diese waren meist zu kompliziert und nicht geeignet.
+Als im nächsten Input genau diese Funktion besprochen wurde, haben wir genau diese Art gewählt. Sie war passend, übersichtlich und verständlich.
+Zusammengefasst besteht die Funktion ganz einfach aus "file.ReadAllText()" und "file.WriteAllText()". Bei beiden muss man in die Klammer einen Path, also ein Dateipfad, und
 Content, also was geschrieben werden soll, schreiben. Das bewirkt dann, dass das Programm diese Datei nimmt und entweder alle Zeichen ausliest und das hineinschreibt, was man verlangt.
-Das ganze haben wir mit einer Liste verbunden. Das heisst, das er das in eine Textdatei schreibt, was in dieser Liste z.B. an Platz 3 steht. So wollten wir dann schlussendlich
+Das ganze haben wir mit einer Liste verbunden. Das heisst, dass er das in eine Textdatei schreibt, was in dieser Liste z.B. an Platz 3 steht. So wollten wir dann schlussendlich
 die Einteilung in die Workshops, in einer Textdatei ausgeben.
 
 ```csharp
@@ -54,7 +54,7 @@ string dataPath = @"C:\Users\haldi\OneDrive\Desktop\Test.txt";
 
 Der Text zeigt, wie wir zur erklärten Funktion gekommen sind. 
 Das Code-Beispiel zeigt, wie man den Text aus einer Datei auslesen kann und wie man in eine Datei reinschreiben kann.
-Das erste Bild zeigt die Textdatei vor dem Einlesen. Das zweite Bild zeigt die Textdatei nach dem ausführen des Programmes.
+Das erste Bild zeigt die Textdatei vor dem Einlesen. Das zweite Bild zeigt die Textdatei nach dem Ausführen des Programmes.
 
 
 # Reflexion zum Arbeitsprozess
@@ -64,4 +64,4 @@ Wir hatten die Planung sehr schnell zusammen und wussten wie wir den Code auftei
 Wir hatten teilweise Probleme beim Programmieren, sodass die Arbeit sehr schleppend verlief.
 
 **VBV**: Wir nehmen uns vor, dass wir uns strikt an die Arbeitspakete und die Planung halten. Das können wir erreichen, indem wir die Planung immer im Auge behalten
-und indem der Gruppenchef mehr kontrolliert was gemacht wird.
+und indem der Gruppenchef mehr kontrolliert, was gemacht wird.

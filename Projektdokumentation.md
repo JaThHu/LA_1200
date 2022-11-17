@@ -53,7 +53,7 @@ Ein Programm in Visual Studios, bei dem Anmeldungen für verschiedene Workshops 
 |  2.A  |  10.11.2022     |      Joel      |   die einzelnen Zeilen der Textdatei sollen in ein Array gespeichert werden.         |      60 min         |
 |  3.A  |  10.11.2022     |     Mohamad    |     zuteilunng der Workshops und begrenzung der freien Plätze     |      60 min         |
 |  3.B  |  10.11.2022     |     Janick      |   Ausgabe der Einteilung mit Teilnehmern.        |      60 min         |
-|  4.A  |  10.11.2022     |     Janick, Joel, Mohamad      |   Zusammenfügen vom Code        |      60 min         |
+|  4.A  |  10.11.2022     |     Janick, Joel, Mohamad      |   Zusammenfügen vom Code und Überarbeitung       |      60 min         |
 Total: 28 Arbeitspakete
 
 
@@ -73,6 +73,7 @@ Total: 28 Arbeitspakete
 | 2.A | 10.11.2022 | Joel | 60 min | 90 min |
 |3.A|10.11.2022|Mohamad|60 min|100 min|
 |3.B|10.11.2022|Janick| 60 min| 90 min|
+|4.A|10.11.2022|Janick, Mohamad, Joel| 60 min| 120 min|
 
 
 ## 5 Kontrollieren
@@ -86,14 +87,6 @@ Total: 28 Arbeitspakete
 
 ✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
 
-### 5.2 Exploratives Testen
-
-| BR-№ | Ausgangslage | Eingabe | Erwartete Ausgabe | Tatsächliche Ausgabe |
-| ---- | ------------ | ------- | ----------------- | -------------------- |
-| I    |              |         |                   |                      |
-| ...  |              |         |                   |                      |
-
-✍️ Verwenden Sie römische Ziffern für Ihre Bug Reports, also I, II, III, IV etc.
 
 ## 6 Auswerten
 

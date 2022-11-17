@@ -22,18 +22,46 @@ Content, also was geschrieben werden soll, schreiben. Das bewirkt dann, dass das
 Das ganze haben wir mit einer Liste verbunden. Das heisst, das er das in eine Textdatei schreibt, was in dieser Liste z.B. an Platz 3 steht. So wollten wir dann schlussendlich
 die Einteilung in die Workshops, in einer Textdatei ausgeben.
 
+```csharp
+
+string dataPath = @"C:\Users\haldi\OneDrive\Desktop\Test.txt";
+
+
+
+           //Liest den Text aus der Datei
+            string fileData = File.ReadAllText(dataPath);
+
+
+
+
+            string Test = "Test3";
+
+
+
+           // Ersetzt  den Text mit der Variable (hier Test)
+            File.WriteAllText(dataPath, Test);
+
+```
+
+![3d71e97a-a010-4bbf-91b3-f25b285157b5](https://user-images.githubusercontent.com/111045598/202411052-158ce887-963a-43e3-99fc-f26c118b2ac9.jpg)
+
+![019e46d8-5b5a-4a8f-85c1-5881649fb86f](https://user-images.githubusercontent.com/111045598/202411095-111da7f1-22d3-4815-81b3-b4dd3ca28886.jpg)
+
 
 
 
 ## Verifikation
 
 Der Text zeigt, wie wir zur erklärten Funktion gekommen sind. 
+Das Code-Beispiel zeigt, wie man den Text aus einer Datei auslesen kann und wie man in eine Datei reinschreiben kann.
+Das erste Bild zeigt die Textdatei vor dem Einlesen. Das zweite Bild zeigt die Textdatei nach dem ausführen des Programmes.
+
 
 # Reflexion zum Arbeitsprozess
 
-Ich wusste sehr schnell, wie ich das Programm schreiben muss, da ich ein PAP erstellt habe und dieses als "Vorlage" verwenden konnte.
+Wir hatten die Planung sehr schnell zusammen und wussten wie wir den Code aufteilen können, sodass jeder arbeiten kann.
 
-Ich bin teilweise sehr von den Arbeitspaketen abgeschweift und habe diese auch nicht immer gleich aktualisiert oder eingetragen.
+Wir hatten teilweise Probleme beim Programmieren, sodass die Arbeit sehr schleppend verlief.
 
-**VBV**: Ich mache mir beim nächsten Projekt eine Benachrichtigung auf dem Handy oder Laptop, die mich gegen Ende der Arbeitszeit fragt, ob ich im Github alles sauber ausgefüllt habe. Zusätzlich halte ich mir immer meine Arbeitspakete auf dem Desktop offen, 
-sodass ich den Überblick behalte und sie nicht vergesse.
+**VBV**: Wir nehmen uns vor, dass wir uns strikt an die Arbeitspakete und die Planung halten. Das können wir erreichen, indem wir die Planung immer im Auge behalten
+und indem der Gruppenchef mehr kontrolliert was gemacht wird.

@@ -83,11 +83,11 @@ Total: 28 Arbeitspakete
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
 | 1.1  |       |          |        |
-| ...  |       |          |        |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+
+Das Programm wird ausgeführt, aber es gibt keine Einteilung in der Textdatei aus.
 
 
 ## 6 Auswerten
 
-✍️ Fügen Sie hier eine Verknüpfung zu Ihrem Lern-Bericht ein.
+Lern-Bericht.md

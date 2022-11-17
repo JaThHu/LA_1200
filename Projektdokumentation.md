@@ -9,7 +9,7 @@ Mitglieder: Joël Haldimann, Mohamad Amraya, Tim Kral, Janick Hurschler
 | ----- | ------- | ------------------------------------------------------------ |
 |  03.11.2022     | 0.1.0   |  Der Code ist jetzt soweit, dass er eine Datei mit Daten einlesen kann. |
 |   10.11.2022    | 0.2.0     |        Der Code ist nun Zusammengesetzt aber die Zuteilung muss noch überarbeitet werden.                                                      |
-|       | 1.0.0   |                                                              |
+|  17.11.2022     | 0.9.0   |     Das Grundprinzip ist soweit erfüllt, aber das Programm funktioniert noch nicht einwandfrei.                                                         |
 
 ## 1 Informieren
 

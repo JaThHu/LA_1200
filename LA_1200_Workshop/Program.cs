@@ -2,152 +2,156 @@ using System.Collections.Generic;
 using System;
 using System.Security.Cryptography.X509Certificates;
 using System.Reflection.Metadata;
+using System.IO;
 
-namespace LA_1200_Workshop
+namespace WorkshopManager
 {
-    internal class Program
+    class Program
     {
-        static void Main(string[] args)
+        static int length = 1000;
+        static string[] email = new string[length];
+        static string[] prio1 = new string[length];
+        static string[] prio2 = new string[length];
+        static string[] prio3 = new string[length];
+
+        static List<string> swimming = new List<string>();
+        static List<string> dancing = new List<string>();
+        static List<string> programming = new List<string>();
+
+        static void readFile()
         {
             string path = @"C:\Users\janic\OneDrive\Desktop\bötterflei.txt";
-
             string text = File.ReadAllText(path);
 
             string[] lines = text.Split("\r\n");
             int words = lines.Length;
-            string[] email = new string[1000];
-            string[] prio1 = new string[1000];
-            string[] prio2 = new string[1000];
-            string[] prio3 = new string[1000];
 
-            
+        }
 
-
-
-
-            
-
-
-
-            List<string> schwimmen = new List<string>();
-            List<string> tanzen = new List<string>();
-            List<string> programmieren = new List<string>();
-
-
-
-
-
-
-
-            for (int i = 0; ; i++)
+        static void classificating()
+        {
+            for (int i = 0; i < prio1.Length; i++)
             {
                 if (prio1[i] == "Schwimmen")
                 {
-                    if (schwimmen.Count > 19)
+                    if (swimming.Count > 19)
                     {
-                        schwimmen.Add(email[i]);
+                        swimming.Add(email[i]);
                     }
                     else
                     {
                         if (prio2[i] == "Tanzen")
                         {
-                            if (tanzen.Count > 19)
+                            if (dancing.Count > 19)
                             {
-                                tanzen.Add(email[i]);
+                                dancing.Add(email[i]);
                             }
                             else
                             {
                                 if (prio3[i] == "Programmieren")
                                 {
-                                    programmieren.Add(email[i]);
+                                    programming.Add(email[i]);
                                 }
                             }
                         }
                     }
                 }
 
-                for (int p = 0; ; p++)
+                for (int p = 0; p < 1000; p++)
                 {
                     if (prio1[p] == "Programmieren")
                     {
-                        if (programmieren.Count > 19)
+                        if (programming.Count > 19)
                         {
-                            programmieren.Add(email[p]);
+                            programming.Add(email[p]);
                         }
                         else
                         {
                             if (prio2[p] == "Schwimmen")
                             {
-                                if (schwimmen.Count > 19)
+                                if (swimming.Count > 19)
                                 {
-                                    schwimmen.Add(email[p]);
+                                    swimming.Add(email[p]);
                                 }
                                 else
                                 {
                                     if (prio3[p] == "Tanzen")
                                     {
-                                        tanzen.Add(email[p]);
+                                        dancing.Add(email[p]);
                                     }
                                 }
                             }
                         }
                     }
 
-                    for (int q = 0; ; q++)
+                    for (int q = 0; q < 1000; q++)
                     {
                         if (prio1[q] == "Tanzen")
                         {
-                            if (tanzen.Count > 19)
+                            if (dancing.Count > 19)
                             {
-                                tanzen.Add(email[q]);
+                                dancing.Add(email[q]);
                             }
                             else
                             {
                                 if (prio2[q] == "Programmieren")
                                 {
-                                    if (programmieren.Count > 19)
+                                    if (programming.Count > 19)
                                     {
-                                        programmieren.Add(email[q]);
+                                        programming.Add(email[q]);
                                     }
                                     else
                                     {
                                         if (prio3[q] == "Schwimmen")
                                         {
-                                            schwimmen.Add(email[q]);
+                                            swimming.Add(email[q]);
                                         }
                                     }
                                 }
                             }
                         }
-                        string pathEinteilung = @"C:\Users\janic\OneDrive\Desktop\test.txt";
-                        
-                        int v = 0;
-                        foreach(string items in schwimmen)
-                        {
-                            File.WriteAllText(pathEinteilung, schwimmen[v]);
-                            v++;
-                        }
-
-                        int l = 0;
-                        foreach (string items in programmieren)
-                        {
-                            File.WriteAllText(pathEinteilung, programmieren[l]);
-                            l++;
-                        }
-
-                        int a = 0;
-                        foreach (string items in tanzen)
-                        {
-                            File.WriteAllText(pathEinteilung, tanzen[a]);
-                            a++;
-                        }
-
-                        
-
                     }
-                    
                 }
             }
         }
-    }    
+
+        static void printing()
+        {
+            string pathClassificating = @"C:\Users\janic\OneDrive\Desktop\test.txt";
+            string toWrite = "";
+
+            foreach (string item in swimming)
+            {
+                toWrite += item;
+
+            }
+
+
+            foreach (string item in programming)
+            {
+                toWrite += item;            
+             }
+
+            
+            foreach (string item in dancing)
+            {
+                toWrite += item;
+            }
+            File.WriteAllText(pathClassificating, toWrite);
+        }
+
+
+
+
+        static void Main(string[] args)
+        {
+            readFile();
+
+            classificating();
+
+            printing();
+
+        }
+
+    }
 }
